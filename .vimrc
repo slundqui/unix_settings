@@ -473,3 +473,16 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
+""" neovim stuff
+"""
+if has('nvim')
+    :tnoremap <Esc> <C-\><C-n>
+else
+    " Standard Vim specific commands
+endif
+
+inoremap <A-j> <Nop>
+inoremap <A-k> <Nop>
+nnoremap <A-j> <Nop>
+nnoremap <A-k> <Nop>
+
